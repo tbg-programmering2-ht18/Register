@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Register
 {
+    //Animal
     class Animal
     {
         public string Name { get; set; }
