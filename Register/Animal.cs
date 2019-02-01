@@ -14,11 +14,22 @@ namespace Register
         public bool CanFly { get; set; }
         public string AnimalType { get; set; }
 
-        public Animal(string animalType, string name, string Sound, bool CanFly) {
+        public Animal(string animalType, string name, string sound, bool canFly) {
             Name = name;
             Sound = Sound;
-            CanFly = CanFly;
-            animalType = animalType;
+            CanFly = canFly;
+            AnimalType = animalType;
+        }
+        public string show()
+        {
+            if (CanFly == true)
+            {
+                return string.Format("Name:{0}\nSound:{1}\nType:{2} and can fly!!", Name, Sound, AnimalType);
+            }
+            else
+            {
+                return string.Format("Name:{0}\nSound:{1}\nType:{2}", Name, Sound, AnimalType);
+            }
         }
     }
 }
