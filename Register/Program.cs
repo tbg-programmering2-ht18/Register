@@ -20,7 +20,7 @@ namespace Register
             userAnimalDict.Add("Viktor", new Animal("Dragon", "Lizzard", "Rawr", true));
 
 
-            bool userloggedIn = false;
+            bool userloggedIn = false; //
             bool done = false;
 
             while (!done)
